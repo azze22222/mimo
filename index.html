@@ -233,7 +233,32 @@ footer{
     </div>
   </div>
 
-  <!-- Ajouter d'autres bracelets ici -->
+  <!-- Bracelet 4 -->
+  <div class="card" data-type="Cuir" data-price="60">
+    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=400&q=80"
+         alt="Bracelet Cuir Moderne"
+         onerror="this.onerror=null;this.src='https://via.placeholder.com/400x200?text=Image+Indisponible';">
+    <div class="card-content">
+      <h3>Bracelet Cuir Moderne</h3>
+      <p>Couleur : Noir</p>
+      <div class="price">60€</div>
+      <button>Détails</button>
+    </div>
+  </div>
+
+  <!-- Bracelet 5 -->
+  <div class="card" data-type="Perles" data-price="100">
+    <img src="https://images.unsplash.com/photo-1598300057506-8a42e7c1c47c?auto=format&fit=crop&w=400&q=80"
+         alt="Bracelet Perles Élégantes"
+         onerror="this.onerror=null;this.src='https://via.placeholder.com/400x200?text=Image+Indisponible';">
+    <div class="card-content">
+      <h3>Bracelet Perles Élégantes</h3>
+      <p>Couleur : Rose</p>
+      <div class="price">100€</div>
+      <button>Détails</button>
+    </div>
+  </div>
+
 </section>
 
 <section class="contact" id="contact">
@@ -266,18 +291,4 @@ function filterProducts(){
     const cp=parseInt(c.dataset.price);
     let ok=true;
 
-    if(t!=="all" && ct!==t) ok=false;
-    if(p!=="all"){
-      const [min,max]=p.split("-").map(Number);
-      if(cp<min || cp>max) ok=false;
-    }
-    c.style.display=ok?"block":"none";
-  });
-}
-
-typeFilter.onchange=filterProducts;
-priceFilter.onchange=filterProducts;
-</script>
-
-</body>
-</html>
+    if(t!=="all" && ct!=
